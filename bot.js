@@ -55,15 +55,6 @@ bot.on('message', async message => {
 
 	
 });
-bot.on('message', async message => {
-	if (message.content.startsWith(prefix + 'setstatus')) {
-		bot.user.setStatus(args);
-	} else
-	if (message.content.startsWith(prefix + 'setgame')) {
-		bot.user.setGame(args);
-	}
-});
-
 
 process.on('unhandledRejection', error => {
   console.error(`Uncaught Promise Error: \n${error.stack}`);
