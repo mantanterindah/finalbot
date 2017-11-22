@@ -1,6 +1,6 @@
 module.exports.run = async (bot, message, args) => {
 	
-	bot.user.setStatus(args)
+	bot.User.setStatus(args)
 
 }
 
