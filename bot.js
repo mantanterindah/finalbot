@@ -34,7 +34,8 @@ bot.on('ready', async () => {
 });
 
 bot.on('message', message => {
-	console.log(`${message.author.tag}: ${message.content} at ${message.createdTimestamp}`)
+	console.log(`${message.author.tag}: ${message.content} at ${message.createdTimestamp}`);
+	if (message.channel.bot) return:
 });
 
 bot.on('message', async message => {
@@ -54,5 +55,9 @@ bot.on('message', async message => {
 
 	
 })
+
+process.on('unhandledRejection', error => {
+  console.error(`Uncaught Promise Error: \n${error.stack}`);
+});
 
 bot.login(process.env.BOT_TOKEN);
