@@ -1,6 +1,6 @@
 module.exports.run = async (bot, message, args) => {
 
-	bot.user.setGame(args);
+	bot.User.setGame(args);
 
 }
 
