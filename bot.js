@@ -35,7 +35,7 @@ bot.on('ready', async () => {
 
 bot.on('message', message => {
 	console.log(`${message.author.tag}: ${message.content} at ${message.createdTimestamp}`);
-	if (message.channel.bot) return:
+	if (message.channel.bot) return;
 });
 
 bot.on('message', async message => {
