@@ -30,8 +30,6 @@ fs.readdir("./cmds/", (err, files) => {
 
 bot.on('ready', async () => {
 	console.log('Bot Ready!')
-	const Games = [`Bot in ${bot.guilds.size} Guilds`, `In ${bot.guilds.size} Guilds with ${bot.users.size} Users`, `Bot with ${bot.guilds.size} Users`]
-    	setInterval(() => { bot.user.setGame(`${Games[Math.floor(Math.random() * Games.length)] }`) }, 900000)
 	bot.commands.set(bot.command);
 });
 
