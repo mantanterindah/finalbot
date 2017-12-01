@@ -38,7 +38,7 @@ module.exports.run = async (bot, message, args) => {
 				let embed = new Discord.RichEmbed()
 					.setTitle(judul)
 					.setColor("#9B59B6")
-					.setThumbnail(gambar)
+					.setImage(gambar)
 					.addField('Link:', link)
 
 
@@ -47,7 +47,7 @@ module.exports.run = async (bot, message, args) => {
 				let embed1 = new Discord.RichEmbed()
 					.setTitle(judul1)
 					.setColor("#734004")
-					.setThumbnail(gambar1)
+					.setImage(gambar1)
 					.addField('Link:', link1)
 
 
@@ -57,7 +57,7 @@ module.exports.run = async (bot, message, args) => {
 				let embed2 = new Discord.RichEmbed()
 					.setTitle(judul2)
 					.setColor("#C4072D")
-					.setThumbnail(gambar2)
+					.setImage(gambar2)
 					.addField('Link:', link2)
 
 
@@ -67,7 +67,7 @@ module.exports.run = async (bot, message, args) => {
 				let embed3 = new Discord.RichEmbed()
 					.setTitle(judul3)
 					.setColor("#201ACE")
-					.setThumbnail(gambar3)
+					.setImage(gambar3)
 					.addField('Link:', link3)
 
 
@@ -77,7 +77,7 @@ module.exports.run = async (bot, message, args) => {
 				let embed4 = new Discord.RichEmbed()
 					.setTitle(judul4)
 					.setColor("#09A309")
-					.setThumbnail(gambar4)
+					.setImage(gambar4)
 					.addField('Link:', link4)
 
 
