@@ -23,7 +23,7 @@ module.exports.run = async (bot, message, args) => {
 		
 		var ygdikirim = ban1 + ban2 + ban3 + ban4
 		
-		message.channel.send('```'+'fix'+'\n'+ygdikirim+'\n'+'```')
+		message.channel.send('```'+'Javascript'+'\n'+ygdikirim+'\n'+'```')
 
 	})
 
