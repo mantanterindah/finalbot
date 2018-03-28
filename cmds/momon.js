@@ -35,7 +35,7 @@ module.exports.run = async (bot, message, args) => {
 						.setColor(0x00AE86)
 						.setThumbnail(gambar)
 						.addField('**Drop List:**', drop1)
-						.addField('**Spawn Monsters**', lokasi1);
+						.addField('**Spawn Monsters**', "checking"+lokasi1);
 
 						message.channel.send(embed1);
 
