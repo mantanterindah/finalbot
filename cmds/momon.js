@@ -22,15 +22,23 @@ module.exports.run = async (bot, message, args) => {
 						console.log(err)
 				}
 					let $ = cheerio.load(body)
-					//Gambarmomon
-					var gambar = $('.MobInfo_Info_Wrapper').each(function(i, element) {
-						var gambarnya = $(this).find('.MobInfo_Image img').attr('src');
-						//console.log(gambarnya)
-					//DropanMomon	
-						
+					//InfoMomon
+					var momonnya = $('div.RDMS_PageTitle').text();
+					var gambar = $('div.MobInfo_Image img').attr('src');
+					var drop = $('div.MobInfo_Drop').children();
+					var drop1 = drop.find('div.MobInfo_Drop_Name, div.MobInfo_Drop_Rate').text();
+					var lokasi = $('div.MobInfo_Spawn').children();
+					var lokasi1 = lokasi.find('td.Table_Title.MobInfo_Spawn_MapName,div.MobInfo_Spawn_Info').text();
 
-							message.channel.send("**"+namanya+"**"+"   "+linknya);
-					})
+					const embed = new Discord.RichEmbed()
+						.setTitle(momonnya)
+						.setColor(0x00AE86)
+						.setThumbnail(gambar)
+						.addField('**Drop List:**', drop1)
+						.addField('**Spawn Monsters**', lokasi1);
+
+						message.channel.send(embed)
+
 					
 				})
 
@@ -42,7 +50,3 @@ module.exports.help = {
 	name: "momon"
 }
 
-//body > center > div > div.RDMS_Content > div.MobInfo_List > table > tbody > tr:nth-child(2) > td.Table_Content.MobInfo_Value_Monster
-//body > center > div > div.RDMS_Content > div.MobInfo_Spawn > table:nth-child(2)
-//body > center > div > div.RDMS_Content > div.MobInfo_Spawn > table:nth-child(3)
-//body > center > div > div.RDMS_Content > div.MobInfo_Spawn > table:nth-child(2) > tbody > tr:nth-child(1) > td
