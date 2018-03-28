@@ -30,15 +30,7 @@ module.exports.run = async (bot, message, args) => {
 					var lokasi = $('div.MobInfo_Spawn').children();
 					var lokasi1 = lokasi.find('td.Table_Title.MobInfo_Spawn_MapName,div.MobInfo_Spawn_Info').text();
 
-					const embed = new Discord.RichEmbed()
-						.setTitle(momonnya)
-						.setColor(0x00AE86)
-						.setThumbnail(gambar)
-						.addField('**Drop List:**', drop1)
-						.addField('**Spawn Monsters**', lokasi1);
-
-						message.channel.send(embed)
-
+					message.channel.send(momonnya+'\n'+drop1+'\n'+lokasi1)
 					
 				})
 
