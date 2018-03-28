@@ -37,7 +37,7 @@ module.exports.run = async (bot, message, args) => {
 						.addField('**Drop List:**', drop1)
 						.addField('**Spawn Monsters**', lokasi1);
 
-						message.channel.send(embed);
+						message.channel.send(embed1);
 
 					//message.channel.send(gambar+'\n'+"```"+"js"+'\n'+momonnya+'\n'+drop1+'\n'+lokasi1+"```")
 					
