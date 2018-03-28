@@ -27,15 +27,15 @@ module.exports.run = async (bot, message, args) => {
 					var gambar = $('div.MobInfo_Image img').attr('src');
 					var drop = $('div.MobInfo_Drop').children();
 					var drop1 = drop.find('div.MobInfo_Drop_Name, div.MobInfo_Drop_Rate').text();
-					var lokasi = $('div.MobInfo_Spawn').children();
-					var lokasi1 = lokasi.find('td.Table_Title.MobInfo_Spawn_MapName,div.MobInfo_Spawn_Info').text();
+					var lokasi = $('div.MobInfo_Spawn').children().text();
+					//var lokasi1 = lokasi.find('td.Table_Title.MobInfo_Spawn_MapName,div.MobInfo_Spawn_Info').text();
 					
 					const embed1 = new Discord.RichEmbed()
 						.setTitle(momonnya)
 						.setColor(0x00AE86)
 						.setThumbnail(gambar)
 						.addField('**Drop List:**', "Checking:...."+'\n'+"```"+"js"+'\n'+drop1+"```")
-						.addField('**Spawn Monsters**', "Checking:..."+'\n'+"```"+"js"+'\n'+lokasi1+"```");
+						.addField('**Spawn Monsters**', "Checking:..."+'\n'+"```"+"js"+'\n'+lokasi+"```");
 
 						message.channel.send(embed1);
 
