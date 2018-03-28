@@ -29,8 +29,17 @@ module.exports.run = async (bot, message, args) => {
 					var drop1 = drop.find('div.MobInfo_Drop_Name, div.MobInfo_Drop_Rate').text();
 					var lokasi = $('div.MobInfo_Spawn').children();
 					var lokasi1 = lokasi.find('td.Table_Title.MobInfo_Spawn_MapName,div.MobInfo_Spawn_Info').text();
+					
+					const embed = new Discord.RichEmbed()
+						.setTitle(momonnya)
+						.setColor(0x00AE86)
+						.setThumbnail(gambar)
+						.addField('**Drop List:**', drop1)
+						.addField('**Spawn Monsters**', lokasi1);
 
-					message.channel.send(gambar+'\n'+"```"+"js"+'\n'+momonnya+'\n'+drop1+'\n'+lokasi1+"```")
+						message.channel.send({embed});
+
+					//message.channel.send(gambar+'\n'+"```"+"js"+'\n'+momonnya+'\n'+drop1+'\n'+lokasi1+"```")
 					
 				})
 
