@@ -30,7 +30,7 @@ module.exports.run = async (bot, message, args) => {
 					var lokasi = $('div.MobInfo_Spawn').children();
 					var lokasi1 = lokasi.find('td.Table_Title.MobInfo_Spawn_MapName,div.MobInfo_Spawn_Info').text();
 
-					message.channel.send(momonnya+'\n'+drop1+'\n'+lokasi1)
+					message.channel.send(gambar+'\n'+"```"+momonnya+'\n'+drop1+'\n'+lokasi1"```")
 					
 				})
 
