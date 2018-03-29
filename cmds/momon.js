@@ -34,8 +34,8 @@ module.exports.run = async (bot, message, args) => {
 						.setTitle(momonnya)
 						.setColor(0x00AE86)
 						.setThumbnail(gambar)
-						.addField('**Drop List:**', "Checking:...."+'\n'+"```"+"js"+'\n'+drop1+"```")
-						.addField('**Spawn Monsters**', "Checking:..."+'\n'+"```"+"js"+'\n'+lokasi+"```");
+						.addField('**Drop List:**', "Checking:...."+'\n'+"```"+"js"+'\n'+drop1+"```");
+						//.addField('**Spawn Monsters**', "Checking:..."+'\n'+"```"+"js"+'\n'+lokasi+"```");
 
 						message.channel.send(embed1);
 
