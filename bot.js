@@ -42,7 +42,7 @@ bot.on('guildMemberAdd', member => {
 	const id = "425701101304545280"
 	const channel = bot.channels.get(id);
 	if (!channel) return;
-	channel.send(`**Welcome <@${member.id}> to Ragnarok Discord Channel Have a Nice Day! \n Please Read at <#428175505506959400>** \n Enjoy !!!`)	
+	channel.send(`**Welcome <@${member.id}> to Ragnarok Discord Channel Have a Nice Day! \n Please Read at <#428175505506959400> \n Enjoy !!!**`)	
 });
 
 bot.on('guildMemberRemove', member => {
