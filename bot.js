@@ -59,7 +59,7 @@ bot.on('message', async message => {
 
 	let messageArray = message.content.split(/\s+/g);
 	let command = messageArray[0];
-	let args = messageArray.join(' ');
+	let args = messageArray.slice(1).join(' ');
 
 
 
