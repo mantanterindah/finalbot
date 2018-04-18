@@ -55,7 +55,7 @@ bot.on('guildMemberRemove', member => {
 bot.on('message', async message => {
 	if(message.author.bot) return;
 	if(message.channel.type === "dm") return;
-	if(message.channel.id === '371380150773743640') return message.reply('This Commands is No Allowed in this Channel');
+	if(message.channel.id === '371380150773743640') return;
 
 	let messageArray = message.content.split(/\s+/g);
 	let command = messageArray[0];
