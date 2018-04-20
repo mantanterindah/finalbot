@@ -38,6 +38,18 @@ bot.on('message', message => {
 	if (message.channel.bot) return;
 });
 
+bot.on('message'. message => {
+	if (message.author.id !== '287824903002914816') return;
+	if (message.author.id === '381582057505292298') return;
+	const SwearWords3 = ["keciduk"]
+	if (SwearWords3.some(word => message.content.includes(word))) {
+		const id = "371380150773743640";
+		const channel = bot.channels.get(id);
+		channel.send(`${message.author.name} \n ${message.content}`)
+	}
+
+});
+
 bot.on('guildMemberAdd', member => {
 	const id = "425667839605866508"
 	const channel = bot.channels.get(id);
