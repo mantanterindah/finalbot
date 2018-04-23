@@ -42,10 +42,27 @@ bot.on('message', message => {
 	if (message.author.id !== '287824903002914816') return;
 	if (message.author.id === '381582057505292298') return;
 	const SwearWords3 = ["keciduk"]
+	
+	const rand1 = [
+	'https://cdn.discordapp.com/attachments/432589912177508352/437194170768031744/roy1.png',
+	'https://cdn.discordapp.com/attachments/432589912177508352/437197882249183243/kocak1.jpg',
+	'https://cdn.discordapp.com/attachments/432589912177508352/437197981217980417/kaget3.jpg',
+	'https://cdn.discordapp.com/attachments/432589912177508352/437198118665191444/kaget2.jpg',
+	'https://cdn.discordapp.com/attachments/432589912177508352/437198295773741056/kaget1.jpg',
+	'https://cdn.discordapp.com/attachments/432589912177508352/437198415315599380/cidukwc.jpg',
+	'https://cdn.discordapp.com/attachments/432589912177508352/437198495833653248/cidukpolpp.jpg',
+	'https://cdn.discordapp.com/attachments/432589912177508352/437198659017375754/cidukpolisi.jpg',
+	'https://cdn.discordapp.com/attachments/432589912177508352/437198840685395968/cidukmesjid.jpg',
+	'https://cdn.discordapp.com/attachments/432589912177508352/437198959388393473/cidukkucing.jpg',
+	'https://cdn.discordapp.com/attachments/432589912177508352/437199046377996288/cidukguru.jpg',
+	];
+	
+	const asu = rand1[Math.floor(Math.random() * rand1.length)];
+	
 	if (SwearWords3.some(word => message.content.includes(word))) {
 		const id = "371380150773743640";
 		const channel = bot.channels.get(id);
-		channel.send(`${message.author.username} \n ${message.content}`)
+		channel.send(`${message.author.username} \n ${message.content} \n`, {file: asu})
 	}
 
 });
@@ -54,7 +71,7 @@ bot.on('guildMemberAdd', member => {
 	const id = "425667839605866508"
 	const channel = bot.channels.get(id);
 	if (!channel) return;
-	channel.send(`**Welcome <@${member.id}> to Ragnarok Discord Channel Have a Nice Day! \n Please Read at <#428175505506959400> \n Enjoy !!!**`)	
+	channel.send(`**Welcome <@${member.id}> to Ragnarok Discord Channel Have a Nice Day! \n Please Read at <#428175505506959400> \n <@!358424962572353536> Enjoy !!!**`)	
 });
 
 bot.on('guildMemberRemove', member => {
