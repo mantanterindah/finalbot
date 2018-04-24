@@ -2,7 +2,7 @@ const botsettings = require('./botsettings.json');
 const Discord = require('discord.js');
 const request = require('request');
 const cheerio = require('cheerio');
-const snekfetch = require('snekfetch');
+//const snekfetch = require('snekfetch');
 const prefix = botsettings.prefix;
 const fs = require('fs')
 
