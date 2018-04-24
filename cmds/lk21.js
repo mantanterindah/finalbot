@@ -5,7 +5,7 @@ const cheerio = module.require('cheerio');
 module.exports.run = async (bot, message, args) => {
 
 	//const url = 'http://dunia21.tv/?s='
-	request(`http://dunia21.tv/?s=${args}`, function(err, resp, body) {
+	request(`https://dunia21.tv/?s=${args}`, function(err, resp, body) {
 		if (err) {
 			console.log(err)
 		}
