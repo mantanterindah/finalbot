@@ -39,7 +39,7 @@ bot.on('message', message => {
 });
 
 bot.on('message', message => {
-	if (message.author.id !== '287824903002914816') return;
+	//if (message.author.id !== '287824903002914816') return;
 	if (message.author.id === '381582057505292298') return;
 	const SwearWords3 = ["keciduk"]
 	
