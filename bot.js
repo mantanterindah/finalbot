@@ -94,6 +94,7 @@ bot.on('message', async message => {
 	if(message.author.bot) return;
 	if(message.channel.type === "dm") return;
 	if(message.channel.id === '371380150773743640') return;
+	if (message.guild.id === '425665765300240417') return; //Komunitas RO
 
 	let messageArray = message.content.split(/\s+/g);
 	let command = messageArray[0];
