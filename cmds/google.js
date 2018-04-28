@@ -21,15 +21,16 @@ module.exports.run = async (bot, message, args) => {
 
                 console.log(url+'\n'+text);
 
-                let embed = new Discord.RichEmbed()
-                  .setTitle(title)
-                  .setURL(url)
-                  .setColor('#e0d31a')
-                  .addField('Sub Text: ', text)
-                  .setThumbnail(message.author.avatarURL)
-                  .setTimestamp();
+                //let embed = new Discord.RichEmbed()
+                  //.setTitle(title)
+                  //.setURL(url)
+                  //.setColor('#e0d31a')
+                  //.addField('Sub Text: ', text)
+                  //.setThumbnail(message.author.avatarURL)
+                  //.setTimestamp();
 
-                  message.channel.send(embed)
+                  //message.channel.send(embed)
+		    message.channel.send("__**"+title+"**__"+'\n'+'\n'+url+'\n'+'\n'+text)
 
           })
       })
