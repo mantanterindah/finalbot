@@ -71,7 +71,7 @@ bot.on('message', message => {
 	if (SwearWords3.some(word => message.content.includes(word))) {
 		const id = "371380150773743640";
 		const channel = bot.channels.get(id);
-		channel.send(`${message.author.username} \n ${message.content} \n`, {file: asu})
+		channel.send(`${message.author.username} ${message.content}`, {file: asu})
 	}
 
 });
