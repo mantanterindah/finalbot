@@ -1,5 +1,5 @@
 const Discord = module.require('discord.js');
-//const shell = module.require('shelljs');
+const fs = module.require('fs');
 
 module.exports.run = async (bot, message, args) => {
 
