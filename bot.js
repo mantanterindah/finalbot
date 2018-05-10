@@ -40,6 +40,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
 	//if (message.author.id !== '287824903002914816') return;
+	if (message.author.id === '372911417939984394') return; //desepticon
 	if (message.author.id === '381582057505292298') return; //DummyBot
 	if (message.author.id === '367980665553027075') return; //optimus
 	if (message.author.id === '309800585438298122') return; //tnz
