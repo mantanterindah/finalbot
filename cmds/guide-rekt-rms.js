@@ -27,7 +27,7 @@ module.exports.run = async (bot, message, args) => {
 				console.log(desc)
 				console.log(script)
 
-				message.channel.send('**'+nama+'**'+'\n'+job+'\n'+'__'+desc+'__'+'\n'+'```js'+'\n'+script+'```', {file:gambar})
+				message.channel.send('```js\n\n'+nama+'\n\n'+job+'\n\n'+desc+'\n\n'+script+'```', {file:gambar})
 
 				//let embed = new Discord.RichEmbed()
 					//.setTitle(nama)
