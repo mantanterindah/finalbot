@@ -2,7 +2,7 @@ const Discord = module.require('discord.js');
 
 module.exports.run = async (bot, message, args) => {
 
-	let msg = await message.channel.send('```diff\n-Please type number what you want see\n- 1.Server Spesification\n- 2.Server Feature\n- 3.Costume Cards\n- 4.Delete Character\n- 5.VIP-Benefit\n- 6.Special Box\n- 7.Roulette Coin\n- 8.Rebirth Sytem\n- 9.Auto-Event\n- 10.Coin(Copper,Bronze,Rekt)\n- 11.Event\n- 12.Costume Recycle\n- 13.Quest Official Rektnarok```',{file: 'https://cdn.discordapp.com/attachments/432589912177508352/496297090679308288/unknown.png'})
+	let msg = await message.channel.send('```diff\n-Please type number what you want see\n- 1.Server Spesification\n- 2.Server Feature\n- 3.Costume Cards\n- 4.Delete Character\n- 5.VIP-Benefit\n- 6.Special Box\n- 7.Roulette Coin\n- 8.Rebirth Sytem\n- 9.Auto-Event\n- 10.Coin(Copper,Bronze,Rekt)\n- 11.Event\n- 12.Costume Recycle\n- 13.Quest Official Rektnarok```',{file: 'https://cdn.discordapp.com/attachments/432589912177508352/496314449498734593/pvp.jpg'})
 
 	//let embed = new Discord.RichEmbed()
 	//	.setTitle('Guide List Rektnarok')
