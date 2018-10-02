@@ -47,32 +47,20 @@ bot.on('message', message => {
 	if (message.author.id === '309003371531075594') return; //kucay
 	if (message.author.id === '306461555510345729') return; //ntong
 	if (message.author.id === '286145687681368064') return; //dije
-	const SwearWords3 = ["keciduk"]
+	const SwearWords3 = ["J>", "j>", "WTS>", "wts>", "WTS", "wts", "Sell", "sell"]
 	
 	const rand1 = [
-	'https://cdn.discordapp.com/attachments/432589912177508352/437194170768031744/roy1.png',
-	'https://cdn.discordapp.com/attachments/432589912177508352/437197882249183243/kocak1.jpg',
-	'https://cdn.discordapp.com/attachments/432589912177508352/437197981217980417/kaget3.jpg',
-	'https://cdn.discordapp.com/attachments/432589912177508352/437198118665191444/kaget2.jpg',
-	'https://cdn.discordapp.com/attachments/432589912177508352/437198295773741056/kaget1.jpg',
-	'https://cdn.discordapp.com/attachments/432589912177508352/439259306789961742/asu5.jpg',
-	'https://cdn.discordapp.com/attachments/432589912177508352/439259193149620234/asu1.jpg',
-	'https://cdn.discordapp.com/attachments/432589912177508352/439259241652682752/asu2.jpg',
-	'https://cdn.discordapp.com/attachments/432589912177508352/439259260778446848/asu3.jpg',
-	'https://cdn.discordapp.com/attachments/432589912177508352/437198415315599380/cidukwc.jpg',
-	'https://cdn.discordapp.com/attachments/432589912177508352/437198495833653248/cidukpolpp.jpg',
-	'https://cdn.discordapp.com/attachments/432589912177508352/437198659017375754/cidukpolisi.jpg',
-	'https://cdn.discordapp.com/attachments/432589912177508352/437198840685395968/cidukmesjid.jpg',
-	'https://cdn.discordapp.com/attachments/432589912177508352/437198959388393473/cidukkucing.jpg',
-	'https://cdn.discordapp.com/attachments/432589912177508352/437199046377996288/cidukguru.jpg',
+	'https://cdn.discordapp.com/attachments/496692039732166667/496719375089401856/unknown.png',
+	'https://cdn.discordapp.com/attachments/496692039732166667/496719893144535042/unknown.png',
+	'https://cdn.discordapp.com/attachments/496692039732166667/496720192232095744/unknown.png',
 	];
 	
 	const asu = rand1[Math.floor(Math.random() * rand1.length)];
 	
 	if (SwearWords3.some(word => message.content.includes(word))) {
-		const id = "371380150773743640";
+		const id = "488533499385741312";
 		const channel = bot.channels.get(id);
-		channel.send(`${message.author.username} ${message.content}`, {file: asu})
+		channel.send('Gambar Hanya Pemanis', {file: asu})
 	}
 
 });
