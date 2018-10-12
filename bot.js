@@ -39,8 +39,8 @@ bot.on('message', message => {
 });
 
 bot.on('ready', () => {
-    const Games = [`Pasang Badan`, `Di Tagih Utang`, `Belom Bayar Listrik`, `Shutting Down`]
-    setInterval(() => { bot.user.setGame(`${Games[Math.floor(Math.random() * Games.length)] }`) }, 10000)
+    const Games = [`AFK`, `Kerja Kasar di Luar`]
+    setInterval(() => { bot.user.setGame(`${Games[Math.floor(Math.random() * Games.length)] }`) }, 30000)
 });
 
 bot.on('message', message => {
