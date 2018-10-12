@@ -38,6 +38,11 @@ bot.on('message', message => {
 	if (message.channel.bot) return;
 });
 
+bot.on('ready', () => {
+    const Games = [`Pasang Badan`, `Di Tagih Utang`, `Belom Bayar Listrik`, `Shutting Down`]
+    setInterval(() => { bot.user.setGame(`${Games[Math.floor(Math.random() * Games.length)] }`) }, 10000)
+});
+
 bot.on('message', message => {
 	//if (message.author.id !== '287824903002914816') return;
 	if (message.author.id === '372911417939984394') return; //desepticon
