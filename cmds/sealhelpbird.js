@@ -2,7 +2,7 @@ const Discord = module.require('discord.js');
 
 module.exports.run = async (bot, message, args) => {
 
-	let msg = await message.reply('```diff\nKetik Angkanya Gajah ehh... Angkanya Maksudnya\n- 1. Bird Egg\n- 2. Legged Egg\n- 3. Bat Wings Egg\n- 4. Feather Wings Egg\n- 5.Baby Bat\n- 6.Blood Sucking\n- 7. Pig Bat\n- 8.Salamander\n- 9. Crow\n- 10. Pair Love\n- 11. Owl\n- 12. Eagle```')
+	let msg = await message.reply('```diff\nKetik Angkanya Gajah ehh... Angkanya Maksudnya\n- 1. Bird Egg\n- 2. Legged Egg\n- 3. Bat Wings Egg\n- 4. Feather Wings Egg\n- 5. Baby Bat\n- 6. Blood Sucking\n- 7. Pig Bat\n- 8. Salamander\n- 9. Crow\n- 10. Pair Love\n- 11. Owl\n- 12. Eagle```')
 
 	//let embed = new Discord.RichEmbed()
 	//	.setTitle('')
