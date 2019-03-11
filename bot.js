@@ -38,10 +38,10 @@ bot.on('message', message => {
 	if (message.channel.bot) return;
 });
 
-bot.on('ready', () => {
-    const Games = [`Warung Kopi Apenk`, `Enigma Seal`]
-    setInterval(() => { bot.user.setGame(`${Games[Math.floor(Math.random() * Games.length)] }`) }, 30000)
-});
+//bot.on('ready', () => {
+//    const Games = [`Warung Kopi Apenk`, `Enigma Seal`]
+//    setInterval(() => { bot.user.setGame(`${Games[Math.floor(Math.random() * Games.length)] }`) }, 30000)
+//});
 
 bot.on('message', message => {
 	//if (message.author.id !== '287824903002914816') return;
