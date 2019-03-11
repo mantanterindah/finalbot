@@ -226,7 +226,7 @@ module.exports.run = async (bot, message, args) => {
 			message.channel.send(bwetopigbat)
 		}
 		if(message.content === '4') {
-			message.channel.send(fwetopairlove)
+			message.channel.send(fwetopair)
 			message.channel.send(fwetocrow)
 			message.channel.send(fwetoowl)
 		}
