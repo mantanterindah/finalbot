@@ -39,7 +39,7 @@ bot.on('message', message => {
 });
 
 bot.on('ready', () => {
-    const Games = [`AFK`, `Kerja Kasar di Luar`]
+    const Games = [`Warung Kopi Apenk`, `Enigma Seal`]
     setInterval(() => { bot.user.setGame(`${Games[Math.floor(Math.random() * Games.length)] }`) }, 30000)
 });
 
