@@ -65,7 +65,7 @@ module.exports.run = async (bot, message, args) => {
 			if(message.content === '1') {
 				message.channel.send(heaventobaby)
 			}
-			if(message.content ==== '2') {
+			if(message.content === '2') {
 				message.channel.send(babytogirl)
 			}
 			if(message.content === '3') {
