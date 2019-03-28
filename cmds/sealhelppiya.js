@@ -230,7 +230,7 @@ module.exports.run = async (bot, message, args) => {
 		console.log(collector)
 		collector.on('collect', message => {
 			if(message.content === '1') {
-				message.channel.send(piyaeggtobaby)
+				message.channel.send(piyaeggtobabypiya)
 			}
 			if(message.content === '2') {
 				message.channel.send(babypiyatosmart)
