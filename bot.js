@@ -43,32 +43,32 @@ bot.on('message', message => {
 //    setInterval(() => { bot.user.setGame(`${Games[Math.floor(Math.random() * Games.length)] }`) }, 30000)
 //});
 
-bot.on('message', message => {
-	//if (message.author.id !== '287824903002914816') return;
-	if (message.author.id === '372911417939984394') return; //desepticon
-	if (message.author.id === '381582057505292298') return; //DummyBot
-	if (message.author.id === '367980665553027075') return; //optimus
-	if (message.author.id === '309800585438298122') return; //tnz
-	if (message.author.id === '309003371531075594') return; //kucay
-	if (message.author.id === '306461555510345729') return; //ntong
-	if (message.author.id === '286145687681368064') return; //dije
-	const SwearWords3 = ["J>", "j>", "WTS>", "wts>", "WTS", "wts", "Sell", "sell"]
-	
-	const rand1 = [
-	'https://cdn.discordapp.com/attachments/496692039732166667/496719375089401856/unknown.png',
-	'https://cdn.discordapp.com/attachments/496692039732166667/496719893144535042/unknown.png',
-	'https://cdn.discordapp.com/attachments/496692039732166667/496720192232095744/unknown.png',
-	];
-	
-	const asu = rand1[Math.floor(Math.random() * rand1.length)];
-	
-	if (SwearWords3.some(word => message.content.includes(word))) {
-		const id = "488533499385741312";
-		const channel = bot.channels.get(id);
-		channel.send('Gambar Hanya Pemanis', {file: asu})
-	}
-
-});
+//bot.on('message', message => {
+//	//if (message.author.id !== '287824903002914816') return;
+//	if (message.author.id === '372911417939984394') return; //desepticon
+//	if (message.author.id === '381582057505292298') return; //DummyBot
+//	if (message.author.id === '367980665553027075') return; //optimus
+//	if (message.author.id === '309800585438298122') return; //tnz
+//	if (message.author.id === '309003371531075594') return; //kucay
+//	if (message.author.id === '306461555510345729') return; //ntong
+//	if (message.author.id === '286145687681368064') return; //dije
+//	const SwearWords3 = ["J>", "j>", "WTS>", "wts>", "WTS", "wts", "Sell", "sell"]
+//	
+//	const rand1 = [
+//	'https://cdn.discordapp.com/attachments/496692039732166667/496719375089401856/unknown.png',
+//	'https://cdn.discordapp.com/attachments/496692039732166667/496719893144535042/unknown.png',
+//	'https://cdn.discordapp.com/attachments/496692039732166667/496720192232095744/unknown.png',
+//	];
+//	
+//	const asu = rand1[Math.floor(Math.random() * rand1.length)];
+//	
+//	if (SwearWords3.some(word => message.content.includes(word))) {
+//		const id = "488533499385741312";
+//		const channel = bot.channels.get(id);
+//		channel.send('Gambar Hanya Pemanis', {file: asu})
+//	}
+//
+//});
 
 //bot.on('guildMemberAdd', member => {
 //	const id = "425667839605866508"
