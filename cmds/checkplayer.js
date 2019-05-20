@@ -1,5 +1,6 @@
 const Discord = module.require('discord.js');
 const request = module.require('request');
+const cheerio = module.require('cheerio');
 
 module.exports.run = async (bot, message, args) => {
 
