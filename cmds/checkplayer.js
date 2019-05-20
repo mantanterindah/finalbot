@@ -4,7 +4,7 @@ const cheerio = module.require('cheerio');
 
 module.exports.run = async (bot, message, args) => {
 
-	const url = 'http://www.enigmasealindo.com/'
+	const url = 'https://enigmasealindo.com/'
 
 	request(url , function(err, resp, body) {
 	if (err) {
