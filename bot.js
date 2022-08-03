@@ -37,37 +37,42 @@ bot.on('message', message => {
 	if (message.channel.bot) return;
 });
 
-//bot.on('ready', () => {
-//    const Games = [`Warung Kopi Apenk`, `Enigma Seal`]
-//    setInterval(() => { bot.user.setGame(`${Games[Math.floor(Math.random() * Games.length)] }`) }, 30000)
-//});
+bot.on('ready', () => {
+    const Games = [`Ragnarok Retro`, `Age of Ragnarok`]
+    setInterval(() => { bot.user.setActivity(`${Games[Math.floor(Math.random() * Games.length)] }`) }, 30000)
+});
 
-//bot.on('message', message => {
-//	//if (message.author.id !== '287824903002914816') return;
-//	if (message.author.id === '372911417939984394') return; //desepticon
-//	if (message.author.id === '381582057505292298') return; //DummyBot
-//	if (message.author.id === '367980665553027075') return; //optimus
-//	if (message.author.id === '309800585438298122') return; //tnz
-//	if (message.author.id === '309003371531075594') return; //kucay
-//	if (message.author.id === '306461555510345729') return; //ntong
-//	if (message.author.id === '286145687681368064') return; //dije
-//	const SwearWords3 = ["J>", "j>", "WTS>", "wts>", "WTS", "wts", "Sell", "sell"]
-//	
-//	const rand1 = [
-//	'https://cdn.discordapp.com/attachments/496692039732166667/496719375089401856/unknown.png',
-//	'https://cdn.discordapp.com/attachments/496692039732166667/496719893144535042/unknown.png',
-//	'https://cdn.discordapp.com/attachments/496692039732166667/496720192232095744/unknown.png',
-//	];
-//	
-//	const asu = rand1[Math.floor(Math.random() * rand1.length)];
-//	
-//	if (SwearWords3.some(word => message.content.includes(word))) {
-//		const id = "488533499385741312";
-//		const channel = bot.channels.get(id);
-//		channel.send('Gambar Hanya Pemanis', {file: asu})
-//	}
-//
-//});
+bot.on('message', message => {
+//	  if (message.author.id !== '367980665553027075') return;
+	if (message.author.id === '367980665553027075') return; //optimus
+	if (message.author.id === '309800585438298122') return; //tnz
+	if (message.author.id === '386439077538562061') return; //ardi
+	if (message.author.id === '409909129235136513') return; //angga
+	if (message.author.id === '713049806637105302') return; //samid
+	if (message.author.id === '890822583505801246') return; //heimdall
+	if (message.author.id === '320192042049339405') return; //cumi
+	if (message.author.id === '338135213873954816') return; //mamen
+
+	const SwearWords3 = ["RAZIA!!","mamenUrgent"]
+	
+	const rand1 = [
+	'https://cdn.discordapp.com/attachments/926185554427645952/1004202581180027042/unknown.png',
+	'https://cdn.discordapp.com/attachments/926185554427645952/1004202784834461756/unknown.png',
+	'https://cdn.discordapp.com/attachments/926185554427645952/1004203038505975898/unknown.png',
+	'https://cdn.discordapp.com/attachments/926185554427645952/1004203441133998140/unknown.png',
+	'https://cdn.discordapp.com/attachments/926185554427645952/1004204225477218385/unknown.png',
+	'https://cdn.discordapp.com/attachments/926185554427645952/1004204499709202432/unknown.png',
+	];
+	
+	const asu = rand1[Math.floor(Math.random() * rand1.length)];
+	
+	if (SwearWords3.some(word => message.content.includes(word))) {
+		const id = "850151563036590121";
+		const channel = bot.channels.get(id);
+		channel.send(message.content , {file: asu})
+	}
+
+});
 
 //bot.on('guildMemberAdd', member => {
 //	const id = "425667839605866508"
