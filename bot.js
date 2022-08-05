@@ -53,7 +53,7 @@ bot.on('message', message => {
 	if (message.author.id === '320192042049339405') return; //cumi
 	if (message.author.id === '338135213873954816') return; //mamen
 
-	const SwearWords3 = ["RAZIA!!","mamenUrgent"]
+	const SwearWords3 = ["RAZIA!!"]
 	
 	const rand1 = [
 	'https://cdn.discordapp.com/attachments/926185554427645952/1004202581180027042/unknown.png',
